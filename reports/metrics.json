@@ -1,0 +1,280 @@
+{
+ "settings": {
+  "iou_threshold": 0.5,
+  "num_images": 200,
+  "classes": [
+   "person",
+   "car",
+   "bus",
+   "truck"
+  ]
+ },
+ "overall": {
+  "tp": 594,
+  "fp": 129,
+  "fn": 391,
+  "precision": 0.822,
+  "recall": 0.603
+ },
+ "per_class": {
+  "person": {
+   "tp": 533,
+   "fp": 93,
+   "fn": 290,
+   "precision": 0.851,
+   "recall": 0.648
+  },
+  "car": {
+   "tp": 40,
+   "fp": 20,
+   "fn": 70,
+   "precision": 0.667,
+   "recall": 0.364
+  },
+  "bus": {
+   "tp": 11,
+   "fp": 3,
+   "fn": 11,
+   "precision": 0.786,
+   "recall": 0.5
+  },
+  "truck": {
+   "tp": 10,
+   "fp": 13,
+   "fn": 20,
+   "precision": 0.435,
+   "recall": 0.333
+  }
+ },
+ "recall_by_size": {
+  "person": {
+   "small": {
+    "recall": 0.369,
+    "num_gt": 360,
+    "missed": 227
+   },
+   "medium": {
+    "recall": 0.801,
+    "num_gt": 286,
+    "missed": 57
+   },
+   "large": {
+    "recall": 0.966,
+    "num_gt": 177,
+    "missed": 6
+   }
+  },
+  "car": {
+   "small": {
+    "recall": 0.216,
+    "num_gt": 74,
+    "missed": 58
+   },
+   "medium": {
+    "recall": 0.655,
+    "num_gt": 29,
+    "missed": 10
+   },
+   "large": {
+    "recall": 0.714,
+    "num_gt": 7,
+    "missed": 2
+   }
+  },
+  "bus": {
+   "small": {
+    "recall": 0.167,
+    "num_gt": 6,
+    "missed": 5
+   },
+   "medium": {
+    "recall": 0.375,
+    "num_gt": 8,
+    "missed": 5
+   },
+   "large": {
+    "recall": 0.875,
+    "num_gt": 8,
+    "missed": 1
+   }
+  },
+  "truck": {
+   "small": {
+    "recall": 0.25,
+    "num_gt": 8,
+    "missed": 6
+   },
+   "medium": {
+    "recall": 0.333,
+    "num_gt": 15,
+    "missed": 10
+   },
+   "large": {
+    "recall": 0.429,
+    "num_gt": 7,
+    "missed": 4
+   }
+  }
+ },
+ "confusion": {
+  "person": {
+   "missed": 290
+  },
+  "car": {
+   "missed": 66,
+   "truck": 4
+  },
+  "bus": {
+   "missed": 11
+  },
+  "truck": {
+   "missed": 16,
+   "bus": 2,
+   "car": 2
+  }
+ },
+ "background_false_positives": {
+  "person": 93,
+  "car": 18,
+  "truck": 9,
+  "bus": 1
+ },
+ "images_without_detections": [
+  "000000177213.jpg",
+  "000000222735.jpg",
+  "000000263966.jpg",
+  "000000354753.jpg",
+  "000000395633.jpg",
+  "000000533145.jpg",
+  "000000569059.jpg"
+ ],
+ "hard_images": [
+  {
+   "file_name": "000000490936.jpg",
+   "num_gt": 16,
+   "tp": 4,
+   "fp": 3,
+   "fn": 12,
+   "missed": [
+    "car",
+    "person",
+    "truck"
+   ],
+   "false_alarms": [
+    "person",
+    "truck"
+   ]
+  },
+  {
+   "file_name": "000000119641.jpg",
+   "num_gt": 13,
+   "tp": 7,
+   "fp": 8,
+   "fn": 6,
+   "missed": [
+    "person"
+   ],
+   "false_alarms": [
+    "person"
+   ]
+  },
+  {
+   "file_name": "000000466416.jpg",
+   "num_gt": 12,
+   "tp": 0,
+   "fp": 1,
+   "fn": 12,
+   "missed": [
+    "car"
+   ],
+   "false_alarms": [
+    "car"
+   ]
+  },
+  {
+   "file_name": "000000017959.jpg",
+   "num_gt": 13,
+   "tp": 1,
+   "fp": 0,
+   "fn": 12,
+   "missed": [
+    "person"
+   ],
+   "false_alarms": []
+  },
+  {
+   "file_name": "000000364884.jpg",
+   "num_gt": 13,
+   "tp": 1,
+   "fp": 0,
+   "fn": 12,
+   "missed": [
+    "person"
+   ],
+   "false_alarms": []
+  },
+  {
+   "file_name": "000000272148.jpg",
+   "num_gt": 12,
+   "tp": 3,
+   "fp": 2,
+   "fn": 9,
+   "missed": [
+    "person"
+   ],
+   "false_alarms": [
+    "car",
+    "person"
+   ]
+  },
+  {
+   "file_name": "000000079969.jpg",
+   "num_gt": 13,
+   "tp": 3,
+   "fp": 0,
+   "fn": 10,
+   "missed": [
+    "person"
+   ],
+   "false_alarms": []
+  },
+  {
+   "file_name": "000000122166.jpg",
+   "num_gt": 17,
+   "tp": 9,
+   "fp": 2,
+   "fn": 8,
+   "missed": [
+    "car",
+    "person",
+    "truck"
+   ],
+   "false_alarms": [
+    "car",
+    "person"
+   ]
+  },
+  {
+   "file_name": "000000207844.jpg",
+   "num_gt": 13,
+   "tp": 3,
+   "fp": 0,
+   "fn": 10,
+   "missed": [
+    "person"
+   ],
+   "false_alarms": []
+  },
+  {
+   "file_name": "000000015517.jpg",
+   "num_gt": 13,
+   "tp": 4,
+   "fp": 0,
+   "fn": 9,
+   "missed": [
+    "bus"
+   ],
+   "false_alarms": []
+  }
+ ]
+}
