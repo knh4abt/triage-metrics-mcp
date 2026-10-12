@@ -12,6 +12,7 @@ COPY configs/ configs/
 COPY triage_agent/ triage_agent/
 # Results of one local run; the app reads them, it never computes them.
 COPY reports/ reports/
+COPY assets/ assets/
 COPY app.py .
 
 # 0.0.0.0 = accept visitors from outside the box, not only from inside it.
